@@ -20,9 +20,8 @@ jobs:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          local-dir: ./dist/ 
-          # Agar public_html nahi mil raha, toh ise khali chhod do
-          # Action apne aap us folder mein jayega jahan FTP account point kar raha hai
+          local-dir: ./dist/
           server-dir: ./
           protocol: ftp
           security: loose
+          dangerous-clean-slate: true
