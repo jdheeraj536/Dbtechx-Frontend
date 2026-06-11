@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 1. Basic Reset & Scroll behavior */
+html {
+  scroll-behavior: auto !important; /* Navigation jump ke liye 'auto' best hai */
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #ffffff;
+  color: #111111;
+  /* 'height: 100%' aur 'overflow: hidden/scroll' hata diya hai taaki page naturally scroll ho */
+  min-height: 100vh;
+  width: 100%;
+  overflow-x: hidden; /* Side scroll rokne ke liye */
+}
+
+/* 2. Marquee Animation */
+@keyframes marquee {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  width: max-content;
+  animation: marquee 20s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+html {
+  scroll-behavior: smooth;
+}
+/* 3. Mobile responsiveness ka dhyan rakhte hue extra styles */
+/* Koi bhi forced fixed height hata di hai taaki content ke saath scroll ho */
