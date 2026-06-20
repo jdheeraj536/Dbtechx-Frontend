@@ -1,6 +1,6 @@
 import { Helmet } from "react-helmet-async"; // SEO ke liye import
 import dheerajImg from "../assets/team/dheeraj.jpeg";
-import amanImg from "../assets/team/aman.jpeg";
+import Vishwambhar from "../assets/team/vishwamabar.webp";
 import priyaImg from "../assets/team/priya.jpeg";
 import Navbar from "../assets/components/Navbar"; // Path check kar lena
 import Footer from "../assets/components/Footer";
@@ -25,9 +25,9 @@ function Team() {
       },
     },
     {
-      name: "Aman Sharma",
+      name: "Vishwambhar Kumar",
       role: "Digital Marketing Head",
-      image: amanImg,
+      image: Vishwambhar,
       desc: "Expert strategist specializing in ROI-driven Meta Ads, Google Ads, and custom digital marketing solutions for local & global scaling.",
       socials: {
         facebook: "#",
