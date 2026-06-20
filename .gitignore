@@ -7,10 +7,13 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
+# Dependencies
 node_modules
-dist
 dist-ssr
 *.local
+
+# ! Force to include dist (Ye line ensure karti hai ki dist folder track ho)
+!dist/
 
 # Editor directories and files
 .vscode/*

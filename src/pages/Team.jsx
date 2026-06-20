@@ -1,7 +1,7 @@
 import { Helmet } from "react-helmet-async"; // SEO ke liye import
 import dheerajImg from "../assets/team/dheeraj.jpeg";
 import Vishwambhar from "../assets/team/vishwamabar.webp";
-import priyaImg from "../assets/team/priya.jpeg";
+import Kanchan from "../assets/team/Kanchan.webp";
 import Navbar from "../assets/components/Navbar"; // Path check kar lena
 import Footer from "../assets/components/Footer";
 import {
@@ -36,10 +36,10 @@ function Team() {
       },
     },
     {
-      name: "Priya Singh",
-      role: "UI/UX Designer",
-      image: priyaImg,
-      desc: "Creative designer focused on crafting modern, conversion-friendly, user-centric website design blueprints and brand identities.",
+      name: "Kanchan Kumari",
+      role: "Business Development Associate",
+      image: Kanchan,
+      desc: "Handles client relationships, business growth, and supports the website team in delivering effective digital solutions.",
       socials: {
         facebook: "#",
         instagram: "#",
