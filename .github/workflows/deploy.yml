@@ -27,3 +27,4 @@ jobs:
           server-dir: public_html/
           secure: false
           port: 21
+          clean: true  # <--- Ye line add karein
