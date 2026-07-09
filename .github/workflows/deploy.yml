@@ -25,6 +25,5 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: ./dist/
           server-dir: public_html/
-          secure: false
-          port: 21
-          clean: true  # <--- Ye line add karein
+          protocol: sftp   # <--- 'secure' ki jagah 'protocol: sftp' use karein
+          port: 22         # <--- SFTP ke liye port 22 hota hai
