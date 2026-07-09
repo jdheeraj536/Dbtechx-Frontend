@@ -7,25 +7,54 @@ export default function Staff() {
   const [activeCalendar, setActiveCalendar] = useState(null);
   const [newStaff, setNewStaff] = useState({ name: '', role: '', baseSalary: '', avatar: '' });
   const [letterConfig, setLetterConfig] = useState({ type: 'Offer Letter', date: '2026-06-14', salaryOrStipend: '', duration: '6 Months' });
-  useEffect(() => {
-    const fetchStaff = async () => {
-      try {
-        const response = await fetch('http://localhost:5000/api/employees/all');
-        const data = await response.json();
-        setStaffList(data);
-      } catch (error) { console.error("Error:", error); }
-    };
-    fetchStaff();
-  }, []);
+  // Staff.jsx mein ye update karo
+// Staff.jsx mein ye update karo
+useEffect(() => {
+  const fetchStaff = async () => {
+    const userData = localStorage.getItem('user');
+    if (!userData) {
+      alert("Session expired! Please login again.");
+      window.location.href = "/login"; // Redirect to login
+      return;
+    }
+    
+    const user = JSON.parse(userData);
+    
+    try {
+      const response = await fetch('http://localhost:5005/api/employees/all', {
+        headers: { 
+          'Authorization': `Bearer ${user.token}` 
+        }
+      });
+      
+      if (response.status === 401) {
+         alert("Session expired!");
+         localStorage.removeItem('user');
+         window.location.href = "/login";
+         return;
+      }
+
+      const data = await response.json();
+      setStaffList(Array.isArray(data) ? data : []);
+    } catch (error) { console.error("Fetch Error:", error); }
+  };
+
+  fetchStaff();
+}, []);
   // Handle Add New Entry
   const saveAttendance = async (staffId, days) => {
+    const user = JSON.parse(localStorage.getItem('user'));
     try {
-      await fetch(`http://localhost:5000/api/employees/update-attendance/${staffId}`, {
+      await fetch(`http://localhost:5005/api/employees/update-attendance/${staffId}`, {
         method: 'PUT',
-        headers: { 'Content-Type': 'application/json' },
+        headers: { 
+          'Content-Type': 'application/json',
+          'Authorization': `Bearer ${user?.token}` 
+        },
         body: JSON.stringify({ presentDays: days }),
       });
-      alert("Attendance Saved!");
+      alert("Attendance Saved to Database!");
+      window.location.reload(); // Refresh to sync
     } catch (error) { console.error("Save Error:", error); }
   };
 
@@ -33,12 +62,51 @@ export default function Staff() {
     if (window.confirm("Confirm delete?")) setStaffList(staffList.filter(item => item.id !== id));
   };
 
-  const handleAddStaffSubmit = (e) => {
-    e.preventDefault();
-    const payload = { id: Date.now().toString(), name: newStaff.name, role: newStaff.role, baseSalary: parseFloat(newStaff.baseSalary) || 0, presentDays: [], avatar: newStaff.avatar || '...' };
-    setStaffList([...staffList, payload]);
-    setShowAddModal(false);
+const handleAddStaffSubmit = async (e) => {
+  e.preventDefault();
+
+  const userData = localStorage.getItem('user');
+  if (!userData) {
+    alert("Session expired. Please login again.");
+    return;
+  }
+  
+  const user = JSON.parse(userData);
+
+  const payload = { 
+    name: newStaff.name, 
+    role: newStaff.role, 
+    baseSalary: parseFloat(newStaff.baseSalary) || 0, 
+    presentDays: [], 
+    avatar: newStaff.avatar || '' 
   };
+
+  try {
+    const res = await fetch('http://localhost:5005/api/employees/add', {
+      method: 'POST',
+      headers: { 
+        'Content-Type': 'application/json',
+        'Authorization': `Bearer ${user.token}` // Token direct yahan daal do
+      },
+      body: JSON.stringify(payload),
+    });
+
+    const data = await res.json(); // Backend ka response capture karo
+
+    if (res.ok) {
+      alert("Staff successfully added!");
+      setShowAddModal(false);
+      window.location.reload(); 
+    } else {
+      // Yahan exact error dikhega
+      console.error("Backend Error:", data);
+      alert("Error: " + (data.message || "Failed to add"));
+    }
+  } catch (err) { 
+    console.error("Fetch Error:", err); 
+    alert("Backend connection error. Check server logs.");
+  }
+};
 
   const toggleAttendance = (id, action) => {
     setStaffList(prevList => prevList.map(staff => {
@@ -87,7 +155,8 @@ export default function Staff() {
               </tr>
             </thead>
             <tbody className="divide-y divide-zinc-800/40 text-xs">
-              {staffList.map((staff) => {
+            {staffList?.map((staff) => {
+              
                 // Auto calculated salary based on base pay and standard 26 working days ratio
                const calculatedPay = Math.round((staff.baseSalary / 26) * staff.presentDays.length);
                 return (
@@ -105,8 +174,8 @@ export default function Staff() {
                         <button onClick={() => toggleAttendance(staff.id, 'sub')} className="bg-zinc-800 text-zinc-400 font-bold px-2 py-0.5 rounded border border-zinc-700 hover:bg-zinc-700">-</button>
                         
                         <span className="font-bold text-white text-sm w-6 text-center">
-  {staff.presentDays.length}d
-</span>
+                        {staff.presentDays.length}d
+                        </span>
                         <button onClick={() => toggleAttendance(staff.id, 'add')} className="bg-zinc-800 text-zinc-400 font-bold px-2 py-0.5 rounded border border-zinc-700 hover:bg-zinc-700">+</button>
                         <button onClick={() => setActiveCalendar(staff)} className="ml-2 bg-blue-900/30 text-blue-400 px-2 py-0.5 rounded border border-blue-900/50 hover:bg-blue-900/50 font-bold text-[9px]">Calender</button>
                       </div>

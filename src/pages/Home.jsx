@@ -73,9 +73,11 @@ export default function Home() {
   ];
 
   const testimonials = [
-    { name: "Rahul Kumar", company: "Business Owner", review: "DBTECHX transformed our online presence and generated quality leads." },
-    { name: "Amit Singh", company: "Startup Founder", review: "Professional team with excellent support and timely delivery." },
-    { name: "Rakesh Jha", company: "Political Consultant", review: "Outstanding campaign management and branding solutions." }
+    { name: "Milesh Yadav", company: "Aeham Hospital", review: "DBTECHX transformed our online presence and generated quality leads." },
+    { name: "Sumit Kumar", company: "Kanchanjunga Foundation Purnea", review: "Professional team with excellent support and timely delivery." },
+    { name: "Md. Murshid Alam", company: "Mla Jokihat", review: "Outstanding campaign management and branding solutions." },
+    { name: "Amit Gupta", company: "Vidyasagar Int. School Purnea", review: "Outstanding campaign management and branding solutions." },
+    { name: "Nitish Jaiswal", company: "Career Craft Bhagalpur", review: "Outstanding campaign management and branding solutions." },
   ];
 
   const clients = [
@@ -282,7 +284,7 @@ export default function Home() {
           </h2>
         </div>
         <div className="relative w-full overflow-x-auto select-none bg-gray-50 py-6 border-y border-gray-100 scrollbar-hide cursor-grab active:cursor-grabbing">
-          <div className="flex space-x-5 animate-[marquee_15s_linear_infinite] whitespace-nowrap min-w-full">
+          <div className="flex space-x-5 animate-[marquee_8s_linear_infinite] whitespace-nowrap min-w-full">
             {[...clients, ...clients].map((client, index) => (
               <div key={index} className="mx-1 px-8 py-4 bg-white shadow-sm border border-gray-100 rounded-2xl font-bold text-gray-700 tracking-wider text-base flex items-center justify-center w-auto min-w-max whitespace-nowrap">
                 {client}
@@ -298,27 +300,40 @@ export default function Home() {
       </section>
 
       {/* CLIENT ENDORSEMENTS */}
-      <section className="py-14 bg-white">
-        <div className="max-w-7xl mx-auto px-6">
-          <h2 className="text-4xl md:text-5xl font-extrabold text-center mb-12 tracking-tight">
-            Client <span className="text-red-600">Endorsements</span>
-          </h2>
-          <div className="grid md:grid-cols-3 gap-8">
-            {testimonials.map((item, index) => (
-              <div key={index} className="bg-zinc-50 rounded-3xl p-8 border border-gray-100 shadow-sm flex flex-col justify-between text-center items-center">
-                <div>
-                  <div className="text-yellow-500 text-lg mb-4">★★★★★</div>
-                  <p className="text-gray-600 leading-relaxed italic text-sm font-medium">"{item.review}"</p>
-                </div>
-                <div className="mt-8 pt-4 border-t border-gray-200/60 w-full">
-                  <h3 className="font-bold text-zinc-900 text-base">{item.name}</h3>
-                  <p className="text-red-600 text-xs font-semibold mt-0.5">{item.company}</p>
-                </div>
-              </div>
-            ))}
+<section className="py-14 bg-white overflow-hidden">
+  <div className="max-w-10xl mx-auto px-0">
+    <h2 className="text-4xl md:text-5xl font-extrabold text-center mb-12 tracking-tight">
+      Client <span className="text-red-600">Endorsements</span>
+    </h2>
+
+    {/* Running Carousel Container */}
+    <div className="relative overflow-hidden">
+      <motion.div 
+        className="flex gap-8 cursor-grab"
+        animate={{ x: ["0%", "-70%"] }}
+        transition={{
+          duration: 10, // Speed adjust kar sakte hain (jyada value = slower)
+          ease: "linear",
+          repeat: Infinity,
+        }}
+      >
+        {/* Double array map for seamless loop */}
+        {[...testimonials, ...testimonials].map((item, index) => (
+          <div key={index} className="bg-zinc-50 rounded-3xl p-8 border border-gray-100 shadow-sm flex flex-col justify-between text-center items-center min-w-[300px] md:min-w-[350px]">
+            <div>
+              <div className="text-yellow-500 text-lg mb-4">★★★★★</div>
+              <p className="text-gray-600 leading-relaxed italic text-sm font-medium">"{item.review}"</p>
+            </div>
+            <div className="mt-8 pt-4 border-t border-gray-200/60 w-full">
+              <h3 className="font-bold text-zinc-900 text-base">{item.name}</h3>
+              <p className="text-red-600 text-xs font-semibold mt-0.5">{item.company}</p>
+            </div>
           </div>
-        </div>
-      </section>
+        ))}
+      </motion.div>
+    </div>
+  </div>
+</section>
 
       {/* WHY CHOOSE US */}
       <section className="py-14 bg-black text-white relative">

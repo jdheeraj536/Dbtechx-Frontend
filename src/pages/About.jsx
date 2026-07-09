@@ -2,6 +2,7 @@ import Navbar from "../assets/components/Navbar";
 // Yahan ye line add karo (path check kar lena ki tumhara Footer folder kahan hai):
 import Footer from "../assets/components/Footer";
 import { motion, useInView } from "framer-motion";
+import Dheeraj from '../assets/dheeraj.jpeg';
 import { useState, useEffect, useRef } from "react";
 import { Helmet } from "react-helmet-async"; // SEO ke liye import
 import {
@@ -275,13 +276,9 @@ function About() {
           
           <div className="w-full max-w-md mx-auto md:max-w-full">
             <img
-              src="/team/dheeraj.jpeg" 
+              src={Dheeraj} 
               alt="Dheeraj Kumar - Founder & CEO"
               className="rounded-3xl shadow-2xl object-cover object-top w-full h-[350px] md:h-[500px]"
-              onError={(e) => {
-                e.target.onerror = null;
-                e.target.src = "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=800&q=80";
-              }}
             />
           </div>
 

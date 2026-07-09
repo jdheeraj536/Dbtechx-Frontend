@@ -1,7 +1,8 @@
 import { Helmet } from "react-helmet-async"; // SEO ke liye import
-import dheerajImg from "../assets/team/dheeraj.jpeg";
-import Vishwambhar from "../assets/team/vishwamabar.webp";
-import Kanchan from "../assets/team/Kanchan.webp";
+import dheerajImg from "../assets/dheeraj.jpeg";
+import Simran from "../assets/simran.webp";
+import Deepika from "../assets/deepika.webp";
+import juli from "../assets/juli.webp";
 import Navbar from "../assets/components/Navbar"; // Path check kar lena
 import Footer from "../assets/components/Footer";
 import {
@@ -24,11 +25,13 @@ function Team() {
         linkedin: "#",
       },
     },
+    
+    
     {
-      name: "Vishwambhar Kumar",
-      role: "Digital Marketing Head",
-      image: Vishwambhar,
-      desc: "Expert strategist specializing in ROI-driven Meta Ads, Google Ads, and custom digital marketing solutions for local & global scaling.",
+      name: "Simran Kumari",
+      role: "Business Development Associate",
+      image: Simran,
+      desc: "Handles client relationships, business growth, and supports the website team in delivering effective digital solutions.",
       socials: {
         facebook: "#",
         instagram: "#",
@@ -36,9 +39,20 @@ function Team() {
       },
     },
     {
-      name: "Kanchan Kumari",
+      name: "Deepika Kumari",
       role: "Business Development Associate",
-      image: Kanchan,
+      image: Deepika,
+      desc: "Handles client relationships, business growth, and supports the website team in delivering effective digital solutions.",
+      socials: {
+        facebook: "#",
+        instagram: "#",
+        linkedin: "#",
+      },
+    },
+    {
+      name: "Juli Khatoon",
+      role: "Business Development Associate",
+      image: juli,
       desc: "Handles client relationships, business growth, and supports the website team in delivering effective digital solutions.",
       socials: {
         facebook: "#",
