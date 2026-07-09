@@ -23,7 +23,7 @@ jobs:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          local-dir: dist/       # <-- './' hata diya
-          server-dir: /public_html/  # <-- '/' add kar diya
+          local-dir: dist/
+          server-dir: /    # <--- Isse wo root directory mein upload karega
           port: 21
           dangerous-clean-slate: true
