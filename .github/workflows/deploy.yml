@@ -24,6 +24,6 @@ jobs:
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: dist/
-          server-dir: public_html/    # <--- Isse wo root directory mein upload karega
+          server-dir: ./    # <--- Isse wo root directory mein upload karega
           port: 21
           dangerous-clean-slate: true
