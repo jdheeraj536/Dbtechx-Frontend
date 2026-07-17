@@ -18,7 +18,7 @@ function Team() {
       name: "Dheeraj Kumar",
       role: "Founder & CEO",
       image: dheerajImg,
-      desc: "Visionary entrepreneur leading DBTECHX with a mission to help businesses grow through technology, marketing, and digital innovation.",
+      desc: "Visionary entrepreneur leading Dbtechx with a mission to help businesses grow through technology, marketing, and digital innovation.",
       socials: {
         facebook: "https://www.facebook.com/jdheeraj536",
         instagram: "https://www.instagram.com/dheeraj_jha_vlogs", // Individual custom link
@@ -68,9 +68,9 @@ function Team() {
     
     <main className="flex-grow">
       <Helmet>
-        <title>Meet Our Professional Team | DBTECHX Digital Experts</title>
-        <meta name="description" content="Meet the expert team behind DBTECHX. Our professionals are dedicated to delivering high-performance digital marketing, web development, and design solutions for your business growth." />
-        <meta name="keywords" content="DBTECHX Team, Digital Marketing Experts, Web Developers Purnia, UX Designers, Business Growth Team, Dheeraj Kumar DBTECHX" />
+        <title>Meet Our Professional Team | Dbtechx Digital Experts</title>
+        <meta name="description" content="Meet the expert team behind Dbtechx. Our professionals are dedicated to delivering high-performance digital marketing, web development, and design solutions for your business growth." />
+        <meta name="keywords" content="Dbtechx Team, Digital Marketing Experts, Web Developers Purnia, UX Designers, Business Growth Team, Dheeraj Kumar Dbtechx" />
         <link rel="canonical" href="https://dbtechx.com/team" />
       </Helmet>
 
@@ -110,7 +110,7 @@ function Team() {
                 </h3>
 
                 <p className="mt-6 text-gray-300 leading-relaxed text-lg">
-                  Visionary entrepreneur leading DBTECHX with a mission to help businesses build strong digital infrastructure and unlock massive growth through technology, data-driven marketing, and creative branding.
+                  Visionary entrepreneur leading Dbtechx with a mission to help businesses build strong digital infrastructure and unlock massive growth through technology, data-driven marketing, and creative branding.
                 </p>
 
                 {/* Founder Specific Social Links */}

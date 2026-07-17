@@ -73,7 +73,7 @@ export default function Home() {
   ];
 
   const testimonials = [
-    { name: "Milesh Yadav", company: "Aeham Hospital", review: "DBTECHX transformed our online presence and generated quality leads." },
+    { name: "Milesh Yadav", company: "Aeham Hospital", review: "Dbtechx transformed our online presence and generated quality leads." },
     { name: "Sumit Kumar", company: "Kanchanjunga Foundation Purnea", review: "Professional team with excellent support and timely delivery." },
     { name: "Md. Murshid Alam", company: "Mla Jokihat", review: "Outstanding campaign management and branding solutions." },
     { name: "Amit Gupta", company: "Vidyasagar Int. School Purnea", review: "Outstanding campaign management and branding solutions." },
@@ -118,11 +118,35 @@ export default function Home() {
   return (
     <div className="bg-white text-gray-900 overflow-hidden antialiased">
       <Helmet>
-        <title>dbtechx | Best Digital Marketing & Web Development Agency in Purnia, Bihar</title>
-        <meta name="description" content="dbtechx offers professional Website Development, Digital Marketing, SEO, and Branding services in Purnia, Bihar. Boost your business with our expert tech solutions." />
-        <meta name="keywords" content="Digital Marketing Agency Purnia, Web Development Bihar, SEO Services Purnia, Graphic Design, Social Media Marketing, dbtechx, Software Development Purnia, Business Branding" />
-        <link rel="canonical" href="https://dbtechx.com/" />
-      </Helmet>
+  <title>Dbtechx | Best Digital Marketing & Web Development Agency in Purnia, Bihar</title>
+
+  <meta
+    name="description"
+    content="Dbtechx offers professional Website Development, Digital Marketing, SEO, and Branding services in Purnia, Bihar."
+  />
+
+  <meta
+    property="og:site_name"
+    content="Dbtechx"
+  />
+
+  <meta
+    property="og:title"
+    content="Dbtechx | Best Digital Marketing & Web Development Agency"
+  />
+
+  <link rel="canonical" href="https://dbtechx.com/" />
+
+  <script type="application/ld+json">
+    {JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      name: "Dbtechx",
+      alternateName: "Dbtechx",
+      url: "https://dbtechx.com",
+    })}
+  </script>
+</Helmet>
       <Navbar />
 
       {/* HERO SECTION */}
@@ -157,7 +181,7 @@ export default function Home() {
             </span>
             <h1 className="text-5xl md:text-7xl font-extrabold leading-tight tracking-tight">
               Grow Your Business With
-              <span className="text-red-500 block mt-2 drop-shadow-[0_0_35px_rgba(220,38,38,0.3)]">DBTECHX</span>
+              <span className="text-red-500 block mt-2 drop-shadow-[0_0_35px_rgba(220,38,38,0.3)]">Dbtechx</span>
             </h1>
             <p className="mt-6 text-xl text-gray-300 max-w-3xl mx-auto font-medium leading-relaxed">
               Website Development, App Development, Digital Marketing, Branding, SEO & AI Solutions.
@@ -203,12 +227,12 @@ export default function Home() {
 
           <div className="text-center lg:text-left flex flex-col items-center lg:items-start">
             <h2 className="text-4xl md:text-5xl font-extrabold tracking-tight">
-              About <span className="text-red-600">DBTECHX</span>
+              About <span className="text-red-600">Dbtechx</span>
             </h2>
             <div className="h-1 w-20 bg-red-600 mt-4 rounded-full" />
             
             <p className="text-gray-600 mt-6 text-lg leading-relaxed font-medium">
-              DBTECHX is a leading technology and digital marketing company dedicated to helping businesses establish a strong online presence and achieve sustainable growth.
+              Dbtechx is a leading technology and digital marketing company dedicated to helping businesses establish a strong online presence and achieve sustainable growth.
             </p>
             <p className="text-gray-600 mt-4 leading-relaxed">
               We specialize in Website Development, Mobile App Development, Digital Marketing, SEO, Graphic Design, Branding, Political Campaign Management, PR Management, Software Development, AI Automation and Business Consulting.
@@ -339,7 +363,7 @@ export default function Home() {
       <section className="py-14 bg-black text-white relative">
         <div className="max-w-7xl mx-auto px-6">
           <h2 className="text-4xl md:text-5xl font-extrabold text-center mb-14 tracking-tight">
-            Why Choose <span className="text-red-500">DBTECHX</span>
+            Why Choose <span className="text-red-500">Dbtechx</span>
           </h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[

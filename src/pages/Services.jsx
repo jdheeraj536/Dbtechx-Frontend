@@ -78,9 +78,9 @@ function Services() {
     
     <main className="flex-grow">
       <Helmet>
-        <title>Our Services | Digital Marketing & Tech Solutions | DBTECHX</title>
-        <meta name="description" content="Explore our professional services: Web and App Development, Digital Marketing, SEO, AI Automation, and Political Campaign Management. Grow your business with DBTECHX." />
-        <meta name="keywords" content="Digital Services Purnia, Web Development, SEO Services, App Development, AI Automation, Political Campaign Management, DBTECHX Services" />
+        <title>Our Services | Digital Marketing & Tech Solutions | Dbtechx</title>
+        <meta name="description" content="Explore our professional services: Web and App Development, Digital Marketing, SEO, AI Automation, and Political Campaign Management. Grow your business with Dbtechx." />
+        <meta name="keywords" content="Digital Services Purnia, Web Development, SEO Services, App Development, AI Automation, Political Campaign Management, Dbtechx Services" />
         <link rel="canonical" href="https://dbtechx.com/services" />
       </Helmet>
 
@@ -96,7 +96,7 @@ function Services() {
           </h1>
 
           <p className="mt-6 text-xl text-gray-200 max-w-3xl mx-auto leading-relaxed">
-            DBTECHX provides end-to-end digital services designed to help your business succeed in the modern world.
+            Dbtechx provides end-to-end digital services designed to help your business succeed in the modern world.
           </p>
         </div>
       </section>
@@ -179,7 +179,7 @@ function Services() {
     <div className="bg-zinc-900/40 border border-zinc-800 rounded-[2rem] p-8 md:p-12 shadow-2xl backdrop-blur-sm">
       <form onSubmit={handleSubmit} className="space-y-6">
         {/* Hidden Config Fields */}
-        <input type="hidden" name="_subject" value="New Service Quote Inquiry - DBTECHX" />
+        <input type="hidden" name="_subject" value="New Service Quote Inquiry - Dbtechx" />
         <input type="hidden" name="_captcha" value="false" />
 
         <input
@@ -248,7 +248,7 @@ function Services() {
         </div>
         <h3 className="text-2xl font-bold text-white mb-3">Inquiry Submitted!</h3>
         <p className="text-gray-400 mb-8 leading-relaxed">
-          Thank you for reaching out to DBTECHX! Your request has been successfully captured. Our technical team will contact you shortly.
+          Thank you for reaching out to Dbtechx! Your request has been successfully captured. Our technical team will contact you shortly.
         </p>
         <button
           onClick={() => setFormStatus({ ...formStatus, success: false })}

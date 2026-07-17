@@ -58,9 +58,9 @@ function About() {
       <Navbar/>
       <main className="flex-grow">
       <Helmet>
-        <title>About Us | DBTECHX - Expert Digital Solutions in Purnia</title>
-        <meta name="description" content="Learn more about DBTECHX, a leading technology and digital marketing agency based in Purnia, Bihar. Discover our mission, vision, and how we help businesses grow." />
-        <meta name="keywords" content="About DBTECHX, Digital Marketing Agency Purnia, Web Development Bihar, Company Story, Digital Transformation, Dheeraj Kumar" />
+        <title>About Us | Dbtechx - Expert Digital Solutions in Purnia</title>
+        <meta name="description" content="Learn more about Dbtechx, a leading technology and digital marketing agency based in Purnia, Bihar. Discover our mission, vision, and how we help businesses grow." />
+        <meta name="keywords" content="About Dbtechx, Digital Marketing Agency Purnia, Web Development Bihar, Company Story, Digital Transformation, Dheeraj Kumar" />
         <link rel="canonical" href="https://dbtechx.com/about" />
       </Helmet>
       
@@ -73,7 +73,7 @@ function About() {
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 text-center relative z-10">
           <span className="inline-block bg-white/10 border border-white/20 px-5 py-2 rounded-full text-xs md:text-sm font-semibold tracking-wide backdrop-blur-sm">
-            🚀 About DBTECHX
+            🚀 About Dbtechx
           </span>
 
           <motion.h1
@@ -88,7 +88,7 @@ function About() {
           </motion.h1>
 
           <p className="mt-6 md:mt-8 text-base md:text-xl text-gray-300 max-w-4xl mx-auto leading-relaxed px-2">
-            DBTECHX is a modern technology and digital marketing company helping businesses grow through innovation, branding, website development, SEO, AI solutions, and powerful marketing strategies.
+            Dbtechx is a modern technology and digital marketing company helping businesses grow through innovation, branding, website development, SEO, AI solutions, and powerful marketing strategies.
           </p>
 
           {/* Optimized Counters */}
@@ -113,7 +113,7 @@ function About() {
           >
             <img
               src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1200&q=80"
-              alt="DBTECHX Team Working"
+              alt="Dbtechx Team Working"
               className="rounded-3xl shadow-2xl object-cover w-full h-[300px] md:h-[450px]"
             />
           </motion.div>
@@ -135,7 +135,7 @@ function About() {
             <div className="h-1 w-16 bg-red-600 mt-4 rounded-full" />
 
             <p className="mt-6 text-gray-600 text-base md:text-lg leading-relaxed font-medium">
-              DBTECHX was founded with a simple mission — helping businesses succeed in the digital world. We combine technology, creativity, and marketing expertise to deliver real business growth.
+              Dbtechx was founded with a simple mission — helping businesses succeed in the digital world. We combine technology, creativity, and marketing expertise to deliver real business growth.
             </p>
 
             <p className="mt-4 text-gray-600 text-base leading-relaxed">
@@ -143,7 +143,7 @@ function About() {
             </p>
 
             <p className="mt-4 text-gray-600 text-base leading-relaxed">
-              Today, DBTECHX serves businesses across multiple industries and continues to help clients build stronger digital identities.
+              Today, Dbtechx serves businesses across multiple industries and continues to help clients build stronger digital identities.
             </p>
           </motion.div>
         </div>
@@ -192,7 +192,7 @@ function About() {
           
           <div className="text-center max-w-3xl mx-auto mb-12 md:mb-16">
             <h2 className="text-3xl md:text-5xl font-extrabold tracking-tight">
-              Why Choose <span className="text-red-600">DBTECHX</span>
+              Why Choose <span className="text-red-600">Dbtechx</span>
             </h2>
             <p className="text-gray-500 mt-4 text-base md:text-lg">
               We don't just create websites or marketing campaigns. We build functional digital ecosystems engineered for scalable growth.
@@ -293,7 +293,7 @@ function About() {
             <div className="h-1 w-16 bg-red-600 mt-4 rounded-full" />
 
             <p className="text-gray-600 text-base md:text-lg mt-6 leading-relaxed font-medium">
-              At DBTECHX, our goal is not only to provide services but to become a dedicated growth partner for every business we collaborate with. We firmly believe technology and marketing deployments should consistently generate tangible business impact.
+              At Dbtechx, our goal is not only to provide services but to become a dedicated growth partner for every business we collaborate with. We firmly believe technology and marketing deployments should consistently generate tangible business impact.
             </p>
 
             <p className="text-gray-600 text-base mt-4 leading-relaxed">
@@ -305,7 +305,7 @@ function About() {
                 Dheeraj Kumar
               </h3>
               <p className="text-red-600 font-bold text-sm mt-0.5">
-                Founder & CEO, DBTECHX
+                Founder & CEO, Dbtechx
               </p>
             </div>
           </div>

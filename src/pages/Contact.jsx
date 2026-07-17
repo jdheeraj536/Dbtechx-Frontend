@@ -44,9 +44,9 @@ function Contact() {
     <Navbar />
      <main className="flex-grow">
       <Helmet>
-        <title>Contact DBTECHX | Get in Touch for Digital Solutions</title>
-        <meta name="description" content="Have a project idea? Contact DBTECHX in Purnia for web development, digital marketing, SEO, and custom software solutions. Let's build something amazing together." />
-        <meta name="keywords" content="Contact DBTECHX, Digital Marketing Agency Purnia, Web Development Services Bihar, Hire Web Developer, Digital Business Consultation" />
+        <title>Contact Dbtechx | Get in Touch for Digital Solutions</title>
+        <meta name="description" content="Have a project idea? Contact Dbtechx in Purnia for web development, digital marketing, SEO, and custom software solutions. Let's build something amazing together." />
+        <meta name="keywords" content="Contact Dbtechx, Digital Marketing Agency Purnia, Web Development Services Bihar, Hire Web Developer, Digital Business Consultation" />
         <link rel="canonical" href="https://dbtechx.com/contact" />
       </Helmet>
 
@@ -54,7 +54,7 @@ function Contact() {
       <section className="bg-gradient-to-r from-black via-red-600 to-black text-white py-32">
         <div className="max-w-7xl mx-auto px-6 text-center">
           <span className="bg-white/20 px-5 py-2 rounded-full text-sm font-semibold tracking-wide backdrop-blur-sm">
-            Contact DBTECHX
+            Contact Dbtechx
           </span>
 
           <h1 className="text-5xl md:text-7xl font-bold mt-6 leading-tight">
@@ -137,7 +137,7 @@ function Contact() {
                 </p>
 
                 <form onSubmit={handleSubmit} className="mt-8 space-y-5">
-                  <input type="hidden" name="_subject" value="New Website Contact Message - DBTECHX" />
+                  <input type="hidden" name="_subject" value="New Website Contact Message - Dbtechx" />
                   <input type="hidden" name="_captcha" value="false" />
                   <input type="hidden" name="_template" value="table" />
 
@@ -207,16 +207,16 @@ function Contact() {
 
             {/* Embedded Responsive Google Map */}
             <div className="rounded-3xl overflow-hidden shadow-xl min-h-112.5 lg:min-h-full relative bg-zinc-200">
-  <iframe
-    title="DBTECHX Location"
-    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d224.52856770307386!2d87.4925317!3d25.7884904!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eff9bb4dee49e1%3A0xadb750fef6a8026e!2sDbtechx!5e0!3m2!1sen!2sin!4v1781785607752!5m2!1sen!2sin"
-    width="100%"
-    height="100%"
-    style={{ border: 0, minHeight: "100%", width: "100%" }}
-    allowFullScreen=""
-    loading="lazy"
-    referrerPolicy="no-referrer-when-downgrade"
-  ></iframe>
+ <iframe
+  title="Dbtechx Location"
+  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d898.1142503168479!2d87.49204256959092!3d25.788493106122687!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eff9bb4dee49e1%3A0xadb750fef6a8026e!2sDbtechx!5e0!3m2!1sen!2sin!4v1784276153232!5m2!1sen!2sin"
+  width="100%"
+  height="100%"
+  style={{ border: 0, minHeight: "100%", width: "100%" }}
+  allowFullScreen
+  loading="lazy"
+  referrerPolicy="strict-origin-when-cross-origin"
+></iframe>
 </div>
 
           </div>
@@ -260,7 +260,7 @@ function Contact() {
             </div>
             <h3 className="text-2xl font-bold text-white mb-2">Message Sent!</h3>
             <p className="text-gray-300 leading-relaxed text-sm">
-              Thank you for contacting DBTECHX. Your project parameters and message details have been successfully received. Our operations desk will respond via mail/call within 24 business hours.
+              Thank you for contacting Dbtechx. Your project parameters and message details have been successfully received. Our operations desk will respond via mail/call within 24 business hours.
             </p>
             <button
               onClick={() => setFormStatus({ ...formStatus, success: false })}

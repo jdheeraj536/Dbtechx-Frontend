@@ -28,7 +28,7 @@ function NotFound() {
     <section className="min-h-screen w-full bg-black flex flex-col items-center justify-center relative overflow-hidden px-4 select-none">
       
       <Helmet>
-        <title>404 - Page Not Found | DBTECHX</title>
+        <title>404 - Page Not Found | Dbtechx</title>
         <meta name="robots" content="noindex, nofollow" />
       </Helmet>
 
@@ -87,7 +87,7 @@ function NotFound() {
 
       {/* Subtle branding footer line */}
       <div className="absolute bottom-6 text-xs text-neutral-600 tracking-widest font-mono uppercase">
-        DBTECHX • Secure Area
+        Dbtechx • Secure Area
       </div>
 
     </section>

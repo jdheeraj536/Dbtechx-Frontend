@@ -9,7 +9,7 @@ function PrivacyPolicy() {
     <Navbar />
     <main className="flex-grow flex items-center justify-center">
       <Helmet>
-        <title>Privacy Policy | DBTECHX</title>
+        <title>Privacy Policy | Dbtechx</title>
         <meta name="robots" content="noindex, follow" />
         <link rel="canonical" href="https://dbtechx.com/privacy-policy" />
       </Helmet>
@@ -33,7 +33,7 @@ function PrivacyPolicy() {
           {/* INTRO */}
           <div className="bg-zinc-900/40 border border-zinc-800 rounded-2xl p-6 sm:p-8 mb-10 backdrop-blur-sm">
             <p className="text-zinc-300 text-lg leading-relaxed">
-              At <strong className="text-white font-semibold">DBTECHX</strong>, we respect your privacy and are committed to protecting the personal data you share with us. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website or use our services, including website development, app development, digital marketing, and branding.
+              At <strong className="text-white font-semibold">Dbtechx</strong>, we respect your privacy and are committed to protecting the personal data you share with us. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website or use our services, including website development, app development, digital marketing, and branding.
             </p>
           </div>
 
@@ -87,7 +87,7 @@ function PrivacyPolicy() {
                 <span className="text-red-500 font-mono text-xl">04.</span> Sharing & Third-Party Disclosure
               </h2>
               <p>
-                DBTECHX does <strong className="text-white font-medium">not</strong> sell, trade, or rent your personal information to third parties. We may only share relevant data with trusted sub-processors (such as secure cloud hosting environments or authorized ad platform tools) strictly necessary to run your campaigns and maintain your live digital assets.
+                Dbtechx does <strong className="text-white font-medium">not</strong> sell, trade, or rent your personal information to third parties. We may only share relevant data with trusted sub-processors (such as secure cloud hosting environments or authorized ad platform tools) strictly necessary to run your campaigns and maintain your live digital assets.
               </p>
             </section>
 
@@ -101,7 +101,7 @@ function PrivacyPolicy() {
               </p>
               <div className="space-y-2 text-base text-zinc-300 font-medium">
                 <p>📩 Email: <a href="mailto:support@dbtechx.com" className="text-red-500 hover:underline">support@dbtechx.com</a></p>
-                <p>💬 WhatsApp: <a href="https://wa.me/#" target="_blank" rel="noreferrer" className="text-green-500 hover:underline">Chat with DBTECHX Support</a></p>
+                <p>💬 WhatsApp: <a href="https://wa.me/#" target="_blank" rel="noreferrer" className="text-green-500 hover:underline">Chat with Dbtechx Support</a></p>
               </div>
             </section>
 
@@ -109,7 +109,7 @@ function PrivacyPolicy() {
 
           {/* FOOTER NOTE */}
           <div className="mt-16 pt-8 border-t border-zinc-900 text-center text-zinc-600 text-sm">
-            © {new Date().getFullYear()} DBTECHX. All rights reserved.
+            © {new Date().getFullYear()} Dbtechx. All rights reserved.
           </div>
 
         </div>

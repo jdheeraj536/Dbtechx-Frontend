@@ -58,16 +58,16 @@ function Careers() {
       
       <main className="flex-grow">
         <Helmet>
-          <title>Careers at DBTECHX | Join Our Growing Team in Purnia</title>
-          <meta name="description" content="Looking for a career in digital marketing or web development? Join the team at DBTECHX in Purnia, Bihar. Apply for open positions today." />
-          <meta name="keywords" content="Careers at DBTECHX, Jobs in Purnia, Digital Marketing Jobs Bihar, Hiring Web Developer, Join DBTECHX, Career Opportunities" />
+          <title>Careers at Dbtechx | Join Our Growing Team in Purnia</title>
+          <meta name="description" content="Looking for a career in digital marketing or web development? Join the team at Dbtechx in Purnia, Bihar. Apply for open positions today." />
+          <meta name="keywords" content="Careers at Dbtechx, Jobs in Purnia, Digital Marketing Jobs Bihar, Hiring Web Developer, Join Dbtechx, Career Opportunities" />
           <link rel="canonical" href="https://dbtechx.com/careers" />
         </Helmet>
 
         {/* Hero Section */}
         <section className="bg-gradient-to-r from-red-600 to-black text-white pt-36 pb-24">
           <div className="max-w-7xl mx-auto px-6 text-center">
-            <h1 className="text-5xl md:text-6xl font-bold">Join DBTECHX</h1>
+            <h1 className="text-5xl md:text-6xl font-bold">Join Dbtechx</h1>
             <p className="mt-5 text-lg md:text-xl">
               Build your future with Bihar's growing Digital Marketing & Software Company.
             </p>
@@ -100,7 +100,7 @@ function Careers() {
 
             <div className="bg-zinc-900/50 border border-zinc-800 rounded-[2rem] p-8 md:p-12 shadow-2xl">
               <form onSubmit={handleSubmit} encType="multipart/form-data" className="space-y-6">
-                <input type="hidden" name="_subject" value="New Job Application - DBTECHX" />
+                <input type="hidden" name="_subject" value="New Job Application - Dbtechx" />
                 <input type="hidden" name="_captcha" value="false" />
                 <input type="hidden" name="_template" value="table" />
 

@@ -29,8 +29,8 @@ function Support() {
     
     <main className="flex-grow">
       <Helmet>
-        <title>Help & Support | DBTECHX Digital Experts</title>
-        <meta name="description" content="Need help with your digital project? Contact the DBTECHX support team for assistance with web development, digital marketing, and technical queries." />
+        <title>Help & Support | Dbtechx Digital Experts</title>
+        <meta name="description" content="Need help with your digital project? Contact the Dbtechx support team for assistance with web development, digital marketing, and technical queries." />
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://dbtechx.com/support" />
       </Helmet>
@@ -138,7 +138,7 @@ function Support() {
 
           {/* BOTTOM BRAND FOOTPRINT */}
           <div className="mt-20 pt-8 text-center text-zinc-700 text-xs font-mono uppercase tracking-widest">
-            DBTECHX Operations Center • Secure Server Connection
+            Dbtechx Operations Center • Secure Server Connection
           </div>
 
         </div>
