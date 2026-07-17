@@ -182,6 +182,12 @@ function Footer() {
                   +91 9504393419
                 </a>
               </div>
+              <div className="flex gap-3 items-center">
+                <FaPhoneAlt className="text-red-500" />
+                <a href="tel:+9106454466850" className="hover:text-red-500 transition-colors">
+                  +91 06454466850
+                </a>
+              </div>
 
               <div className="flex gap-3 items-center">
                 <FaEnvelope className="text-red-500" />
@@ -193,8 +199,7 @@ function Footer() {
               <div className="flex gap-3">
                 <FaMapMarkerAlt className="text-red-500 mt-1 flex-shrink-0" />
                 <span>
-                  Rps Plaza, Near Hope Hospital Purnea Bihar 854301,
-                  Purnea, Bihar, India
+                  RPS Plaza, Near Hope Hospital, Purnia, Bihar 854301
                 </span>
               </div>
 
@@ -209,7 +214,7 @@ function Footer() {
         <div className="flex flex-col md:flex-row justify-between items-center gap-4">
 
           <p className="text-gray-500">
-            © 2026 DBTECHX. All Rights Reserved.
+            © 2026 Dbtechx. All Rights Reserved.
           </p>
 
           <div className="flex gap-6 text-gray-500">

@@ -34,4 +34,4 @@ jobs:
           local-dir: ./dist/
           server-dir: /domains/dbtechx.com/public_html/
           port: 21
-          dangerous-clean-slate: true
+          

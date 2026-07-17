@@ -251,10 +251,10 @@ export default function Home() {
             Our Strategy By The <span className="text-red-600">Numbers</span>
           </h2>
           <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-8">
-            <Counter target={75} label="Projects Completed" />
-            <Counter target={55} label="Happy Clients" />
-            <Counter target={22} label="Team Members" />
-            <Counter target={5} label="Years Experience" />
+            <Counter target={252} label="Projects Completed" />
+            <Counter target={215} label="Happy Clients" />
+            <Counter target={13} label="Team Members" />
+            <Counter target={7} label="Years Experience" />
           </div>
         </div>
       </section>

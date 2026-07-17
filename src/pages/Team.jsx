@@ -2,7 +2,8 @@ import { Helmet } from "react-helmet-async"; // SEO ke liye import
 import dheerajImg from "../assets/dheeraj.jpeg";
 import Simran from "../assets/simran.webp";
 import Deepika from "../assets/deepika.webp";
-import juli from "../assets/juli.webp";
+import Rahul from "../assets/rahul.webp";
+import Monika from "../assets/monika.webp";
 import Navbar from "../assets/components/Navbar"; // Path check kar lena
 import Footer from "../assets/components/Footer";
 import {
@@ -22,6 +23,28 @@ function Team() {
       socials: {
         facebook: "https://www.facebook.com/jdheeraj536",
         instagram: "https://www.instagram.com/dheeraj_jha_vlogs", // Individual custom link
+        linkedin: "#",
+      },
+    },
+    {
+      name: "Rahul Kumar",
+      role: "Social Media Manager",
+      image: Rahul,
+      desc: "Social Media Manager at Dbtechx, focused on creating engaging content, managing social media platforms, and helping businesses grow their digital presence.",
+      socials: {
+        facebook: "https://www.facebook.com/rahul.roy.449286",
+        instagram: "#", // Individual custom link
+        linkedin: "#",
+      },
+    },
+    {
+      name: "Monika Kumari",
+      role: "Social Media Manager",
+      image: Monika,
+      desc: "Social Media Manager at Dbtechx, focused on creating engaging content, managing social media platforms, and helping businesses grow their digital presence.",
+      socials: {
+        facebook: "#",
+        instagram: "#", // Individual custom link
         linkedin: "#",
       },
     },
@@ -49,17 +72,7 @@ function Team() {
         linkedin: "#",
       },
     },
-    {
-      name: "Juli Khatoon",
-      role: "Business Development Associate",
-      image: juli,
-      desc: "Handles client relationships, business growth, and supports the website team in delivering effective digital solutions.",
-      socials: {
-        facebook: "#",
-        instagram: "#",
-        linkedin: "#",
-      },
-    },
+    
   ];
 
   return (

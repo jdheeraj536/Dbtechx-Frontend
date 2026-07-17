@@ -93,9 +93,9 @@ function About() {
 
           {/* Optimized Counters */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8 mt-12 md:mt-16 bg-white/5 backdrop-blur-md rounded-3xl p-6 md:p-8 border border-white/10 max-w-5xl mx-auto">
-            <Counter target={75} label="Projects Delivered" suffix="+" />
-            <Counter target={55} label="Happy Clients" suffix="+" />
-            <Counter target={22} label="Team Members" suffix="+" />
+            <Counter target={250} label="Projects Delivered" suffix="+" />
+            <Counter target={215} label="Happy Clients" suffix="+" />
+            <Counter target={13} label="Team Members" suffix="+" />
             <Counter target={24} label="Client Support" suffix="/7" />
           </div>
         </div>
@@ -256,9 +256,9 @@ function About() {
           
           <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-6">
             {[
-              { val: "75+", metric: "Projects Delivered" },
-              { val: "55+", metric: "Happy Clients" },
-              { val: "22+", metric: "Team Members" },
+              { val: "252+", metric: "Projects Delivered" },
+              { val: "215+", metric: "Happy Clients" },
+              { val: "13+", metric: "Team Members" },
               { val: "24/7", metric: "Client Production Support" }
             ].map((box, idx) => (
               <div key={idx} className="bg-white p-6 md:p-8 rounded-2xl shadow-md border border-gray-100 text-center">
