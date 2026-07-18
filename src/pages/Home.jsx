@@ -78,11 +78,15 @@ export default function Home() {
     { name: "Md. Murshid Alam", company: "Mla Jokihat", review: "Outstanding campaign management and branding solutions." },
     { name: "Amit Gupta", company: "Vidyasagar Int. School Purnea", review: "Outstanding campaign management and branding solutions." },
     { name: "Nitish Jaiswal", company: "Career Craft Bhagalpur", review: "Outstanding campaign management and branding solutions." },
+    { name: "Sarfaraz Khan", company: "Mannat Automation", review: "Outstanding campaign management and branding solutions." },
   ];
 
   const clients = [
     "SEEMANCHAL24", "MAXTRON EV", "KANCHANJUNGA", "CAREER CRAFT", 
-    "AEHAM HOSPITAL", "MIMANSA HOSPITAL", "B2 CAREER SOLUTION", "POLITICAL CLIENT"
+    "AEHAM HOSPITAL", "MIMANSA HOSPITAL", "B2 CAREER SOLUTION", 
+    "MANNAT AUTOMATION","GROW ELEVATOR","ADVANCE HOMEO CARE",
+    "LUXERA TILES","CAT WALK SALON","FURNITURE HOME",
+    "SMH HOSPITAL","BHARAT ENTERPRISES","MURSHID ALAM (MLA JOKIHAT)"
   ];
 
   const handleEnquirySubmit = async (e) => {
