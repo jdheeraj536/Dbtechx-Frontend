@@ -63,6 +63,7 @@ function Navbar() {
             <NavLink to="/" className={navLinkClass}>Home</NavLink>
             <NavLink to="/about" className={navLinkClass}>About</NavLink>
             <NavLink to="/services" className={navLinkClass}>Services</NavLink>
+            <NavLink to="/projects" className={navLinkClass}>Projects</NavLink>
             <NavLink to="/team" className={navLinkClass}>Team</NavLink>
             <NavLink to="/careers" className={navLinkClass}>Careers</NavLink>
             <NavLink to="/contact" className={navLinkClass}>Contact</NavLink>
@@ -90,6 +91,7 @@ function Navbar() {
             <NavLink to="/" onClick={() => setMenuOpen(false)} className={navLinkClass}>Home</NavLink>
             <NavLink to="/about" onClick={() => setMenuOpen(false)} className={navLinkClass}>About</NavLink>
             <NavLink to="/services" onClick={() => setMenuOpen(false)} className={navLinkClass}>Services</NavLink>
+            <NavLink to="/projects" onClick={() => setMenuOpen(false)} className={navLinkClass}>Projects</NavLink>
             <NavLink to="/team" onClick={() => setMenuOpen(false)} className={navLinkClass}>Team</NavLink>
             <NavLink to="/careers" onClick={() => setMenuOpen(false)} className={navLinkClass}>Careers</NavLink>
             <NavLink to="/contact" onClick={() => setMenuOpen(false)} className={navLinkClass}>Contact</NavLink>
