@@ -5,7 +5,7 @@ import Footer from '../assets/components/Footer';
 // Imports for available assets
 import Smhhospital from '../assets/smhhospital.png';
 import Shivamsuri from '../assets/shivamsuri.png';
-import Bharat from '../assets/Bharat.jpg';
+import Bharat from '../assets/bharat.jpg';
 import Homeo from '../assets/homeo.png';
 import Catwalk from '../assets/catwalk.png';
 import Kanchajunga from '../assets/kanchanjunga.png';
