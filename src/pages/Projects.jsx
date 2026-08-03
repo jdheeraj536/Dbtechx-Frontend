@@ -17,7 +17,8 @@ import Career from '../assets/career.jpg';
 import Smh from '../assets/smh.webp';
 import Luxera from '../assets/luxera.jpeg';
 import Shivam from '../assets/shivam.jpeg';
-import Kanchanjunga2 from '../assets/kanchanjunga2.png';
+import kanchanjungawebsite from '../assets/kanchanjungawebsite.png';
+import Manjushree from '../assets/Manjushree.png';
 
 export default function Projects() {
   const [activeTab, setActiveTab] = useState('all');
@@ -46,16 +47,18 @@ export default function Projects() {
       liveUrl: "https://beige-lion-509201.hostingersite.com/",
       status: "Live Preview"
     },
+
     {
       id: 3,
-      title: "Kanchanjunga Foundation",
-      category: "web",
-      description: "Clean, professional static NGO website designed for social impact showcasing foundation initiatives and mission.",
-      image: Kanchanjunga2,
-      tech: ["Static Website", "React/JS", "UI Design", "Tailwind CSS"],
-      liveUrl: "http://kanchanjungafoundation.com",
+      title: "Kanchanjunga Foundation ",
+      category: "web", 
+      description: "High-end dynamic portfolio website showcasing architectural designs, project galleries, and client consultation features.",
+      image: kanchanjungawebsite,
+      tech: ["Dynamic Web", "React/JS", "UI Design", "Tailwind CSS"],
+      liveUrl: "https://kanchanjungafoundation.com/",
       status: "Live Preview"
     },
+    
     {
       id: 4,
       title: "Mannat Automation",
@@ -172,6 +175,16 @@ export default function Projects() {
       category: "marketing",
       description: "Shivam Suri Architect is a premier architectural consultancy practice based in Purnea",
       image: Shivam,
+      tech: ["Lead Gen", "Social Impact", "Campaigns"],
+      liveUrl: "#",
+      status: "Active Campaign"
+    },
+    {
+      id: 16,
+      title: "Universal Hospital And Research Centre",
+      category: "marketing",
+      description: "Universal Hospital & Research Centre, Purnia ek healthcare aur nursing training institute.",
+      image: Manjushree,
       tech: ["Lead Gen", "Social Impact", "Campaigns"],
       liveUrl: "#",
       status: "Active Campaign"
@@ -365,7 +378,7 @@ export default function Projects() {
 
                   {/* Details Content */}
                   <div className="p-3 sm:p-6">
-                    <h3 className="text-xs sm:text-xl font-bold text-white mb-1 sm:mb-2 group-hover:text-red-500 transition-colors line-clamp-1">{project.title}</h3>
+                    <h3 className="text-xs sm:text-xl font-bold text-white mb-1 sm:mb-2 group-hover:text-red-500 transition-colors leading-snug">{project.title}</h3>
                     <p className="text-zinc-400 text-[10px] sm:text-sm leading-relaxed mb-3 sm:mb-4 line-clamp-2 sm:line-clamp-none">{project.description}</p>
                     
                     {/* Tech / Service Tags */}
