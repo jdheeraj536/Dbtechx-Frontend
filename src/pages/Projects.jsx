@@ -50,7 +50,7 @@ export default function Projects() {
       title: "Kanchanjunga Foundation",
       category: "web",
       description: "Clean, professional static NGO website designed for social impact showcasing foundation initiatives and mission.",
-      image: "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&q=80&w=600",
+      image: Kanchajunga,
       tech: ["Static Website", "React/JS", "UI Design", "Tailwind CSS"],
       liveUrl: "http://kanchanjungafoundation.com",
       status: "Upcoming / Pre-launch"
@@ -177,6 +177,110 @@ export default function Projects() {
     },
   ];
 
+  // ==========================================
+  // 🎥 CLIENT AD VIDEOS DATA (YouTube Shorts)
+  // ==========================================
+  const clientAdVideos = [
+    {
+      id: 1,
+      title: "Client Promotional Ad #1",
+      client: "DBTechX Digital Partner",
+      embedUrl: "https://www.youtube.com/embed/bVw1mqrKXE0",
+      tag: "YouTube Short"
+    },
+    {
+      id: 2,
+      title: "Client Promotional Ad #2",
+      client: "DBTechX Digital Partner",
+      embedUrl: "https://www.youtube.com/embed/cruB9xu5QN0",
+      tag: "YouTube Short"
+    },
+    {
+      id: 3,
+      title: "Client Promotional Ad #3",
+      client: "DBTechX Digital Partner",
+      embedUrl: "https://www.youtube.com/embed/OCKxnZ_pxbI",
+      tag: "YouTube Short"
+    },
+    {
+      id: 4,
+      title: "Client Promotional Ad #4",
+      client: "DBTechX Digital Partner",
+      embedUrl: "https://www.youtube.com/embed/4Xwsn3wTQyI",
+      tag: "YouTube Short"
+    },
+    {
+      id: 5,
+      title: "Client Promotional Ad #5",
+      client: "DBTechX Digital Partner",
+      embedUrl: "https://www.youtube.com/embed/UDN4G1mktTQ",
+      tag: "YouTube Short"
+    },
+    {
+      id: 6,
+      title: "Client Promotional Ad #6",
+      client: "DBTechX Digital Partner",
+      embedUrl: "https://www.youtube.com/embed/FkGAL_JQCIM",
+      tag: "YouTube Short"
+    },
+    {
+      id: 7,
+      title: "Client Promotional Ad #7",
+      client: "DBTechX Digital Partner",
+      embedUrl: "https://www.youtube.com/embed/5GqLt0WPdKQ",
+      tag: "YouTube Short"
+    },
+    {
+      id: 8,
+      title: "Client Promotional Ad #8",
+      client: "DBTechX Digital Partner",
+      embedUrl: "https://www.youtube.com/embed/neEuYetytp4",
+      tag: "YouTube Short"
+    },
+    {
+      id: 9,
+      title: "Client Promotional Ad #9",
+      client: "DBTechX Digital Partner",
+      embedUrl: "https://www.youtube.com/embed/breMGposOxU",
+      tag: "YouTube Short"
+    },
+    {
+      id: 10,
+      title: "Client Promotional Ad #10",
+      client: "DBTechX Digital Partner",
+      embedUrl: "https://www.youtube.com/embed/YPP6KCHalZU",
+      tag: "YouTube Short"
+    },
+    {
+      id: 11,
+      title: "Client Promotional Ad #11",
+      client: "DBTechX Digital Partner",
+      embedUrl: "https://www.youtube.com/embed/0jQw35KoaN4",
+      tag: "YouTube Short"
+    },
+    {
+      id: 12,
+      title: "Client Promotional Ad #12",
+      client: "DBTechX Digital Partner",
+      embedUrl: "https://www.youtube.com/embed/uVzas-lI-Js",
+      tag: "YouTube Short"
+    },
+    {
+      id: 13,
+      title: "Client Promotional Ad #13",
+      client: "DBTechX Digital Partner",
+      embedUrl: "https://www.youtube.com/embed/6XFNHHg_IQ0",
+      tag: "YouTube Short"
+    },
+    {
+      id: 14,
+      title: "Client Promotional Ad #14",
+      client: "DBTechX Digital Partner",
+      embedUrl: "https://www.youtube.com/embed/3OyuIbwiKvg",
+      tag: "YouTube Short"
+    }
+  ];
+
   const filteredProjects = activeTab === 'all' 
     ? clientProjects 
     : clientProjects.filter(item => item.category === activeTab);
@@ -188,92 +292,165 @@ export default function Projects() {
       <Navbar />
 
       {/* Main Content Body */}
-      <main className="max-w-7xl mx-auto px-4 sm:px-8 pt-28 sm:pt-36 pb-20 w-full">
+      <main className="w-full pb-20">
         
-        {/* Header Section */}
-        <div className="text-center max-w-2xl mx-auto mb-14">
-          <span className="text-red-600 font-bold uppercase tracking-widest text-[11px] bg-red-950/40 border border-red-900/50 px-3 py-1 rounded-full">
-            OUR CLIENT PORTFOLIO
-          </span>
-          <h1 className="text-3xl sm:text-5xl font-black text-white tracking-tight mt-3">
-            Websites & Brands We've <span className="text-red-600">Engineered</span>
-          </h1>
-          <p className="text-zinc-400 text-xs sm:text-sm mt-3 leading-relaxed">
-            Explore our successfully deployed web portals, digital marketing campaigns, and brand partnerships.
-          </p>
-          
-          {/* Filter Tabs */}
-          <div className="flex flex-wrap justify-center gap-2.5 mt-8">
-            <button 
-              onClick={() => setActiveTab('all')}
-              className={`px-5 py-2.5 rounded-xl text-xs font-bold transition-all cursor-pointer ${activeTab === 'all' ? 'bg-red-600 text-white shadow-lg shadow-red-600/20' : 'bg-[#131517] text-zinc-400 border border-zinc-800 hover:bg-zinc-800 hover:text-zinc-200'}`}
-            >
-              All Projects ({clientProjects.length})
-            </button>
-            <button 
-              onClick={() => setActiveTab('web')}
-              className={`px-5 py-2.5 rounded-xl text-xs font-bold transition-all cursor-pointer ${activeTab === 'web' ? 'bg-red-600 text-white shadow-lg shadow-red-600/20' : 'bg-[#131517] text-zinc-400 border border-zinc-800 hover:bg-zinc-800 hover:text-zinc-200'}`}
-            >
-              🌐 Web Development
-            </button>
-            <button 
-              onClick={() => setActiveTab('marketing')}
-              className={`px-5 py-2.5 rounded-xl text-xs font-bold transition-all cursor-pointer ${activeTab === 'marketing' ? 'bg-red-600 text-white shadow-lg shadow-red-600/20' : 'bg-[#131517] text-zinc-400 border border-zinc-800 hover:bg-zinc-800 hover:text-zinc-200'}`}
-            >
-              📈 Digital Marketing
-            </button>
+        {/* Service Page Style Hero Banner with Red Gradient Background */}
+        <div className="relative w-full bg-gradient-to-b from-red-950/70 via-black/80 to-[#0c0d0e] pt-32 sm:pt-44 pb-16 px-4 sm:px-8 border-b border-zinc-900">
+          <div className="text-center max-w-3xl mx-auto">
+            
+            {/* Top Ecosystem Badge */}
+            <div className="inline-block mb-4">
+              <span className="text-zinc-300 font-medium tracking-wider text-xs sm:text-sm bg-zinc-900/80 border border-zinc-800 px-4 py-1.5 rounded-full shadow-inner backdrop-blur-md">
+                OUR CLIENT PORTFOLIO
+              </span>
+            </div>
+
+            {/* Main Heading */}
+            <h1 className="text-4xl sm:text-6xl font-black text-white tracking-tight leading-tight">
+              Websites & Brands We've <span className="text-red-600">Engineered</span>
+            </h1>
+
+            {/* Subtitle */}
+            <p className="text-zinc-400 text-xs sm:text-base mt-4 leading-relaxed max-w-2xl mx-auto">
+              Explore our successfully deployed web portals, digital marketing campaigns, and brand partnerships.
+            </p>
+            
+            {/* Filter Tabs inside Hero */}
+            <div className="flex flex-wrap justify-center gap-2.5 mt-8">
+              <button 
+                onClick={() => setActiveTab('all')}
+                className={`px-5 py-2.5 rounded-xl text-xs font-bold transition-all cursor-pointer ${activeTab === 'all' ? 'bg-red-600 text-white shadow-lg shadow-red-600/20' : 'bg-[#131517] text-zinc-400 border border-zinc-800 hover:bg-zinc-800 hover:text-zinc-200'}`}
+              >
+                All Projects ({clientProjects.length})
+              </button>
+              <button 
+                onClick={() => setActiveTab('web')}
+                className={`px-5 py-2.5 rounded-xl text-xs font-bold transition-all cursor-pointer ${activeTab === 'web' ? 'bg-red-600 text-white shadow-lg shadow-red-600/20' : 'bg-[#131517] text-zinc-400 border border-zinc-800 hover:bg-zinc-800 hover:text-zinc-200'}`}
+              >
+                🌐 Web Development
+              </button>
+              <button 
+                onClick={() => setActiveTab('marketing')}
+                className={`px-5 py-2.5 rounded-xl text-xs font-bold transition-all cursor-pointer ${activeTab === 'marketing' ? 'bg-red-600 text-white shadow-lg shadow-red-600/20' : 'bg-[#131517] text-zinc-400 border border-zinc-800 hover:bg-zinc-800 hover:text-zinc-200'}`}
+              >
+                📈 Digital Marketing
+              </button>
+            </div>
+
           </div>
         </div>
 
-        {/* Projects Grid Cards - Phone pe 2-2 aur Desktop pe 4-4 */}
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-6">
-          {filteredProjects.map((project) => (
-            <div 
-              key={project.id}
-              className="bg-[#131517] border border-zinc-800/80 rounded-2xl overflow-hidden shadow-2xl hover:border-zinc-700 transition-all flex flex-col justify-between group"
-            >
-              <div>
-                {/* Thumbnail Image Container */}
-                <div className="relative h-32 sm:h-48 overflow-hidden bg-black/40 p-2 sm:p-3 border-b border-zinc-800 flex items-center justify-center">
-                  <img 
-                    src={project.image} 
-                    alt={project.title} 
-                    className="w-full h-full object-contain rounded-lg group-hover:scale-105 transition-transform duration-500"
-                  />
-                  <span className="absolute top-2 right-2 sm:top-4 sm:right-4 bg-black/80 backdrop-blur-md text-[8px] sm:text-[10px] font-bold px-2 sm:px-3 py-0.5 sm:py-1 rounded-full uppercase tracking-wider text-red-500 border border-zinc-700/80 shadow-md">
-                    {project.status}
-                  </span>
+        {/* Projects Grid Container */}
+        <div className="max-w-7xl mx-auto px-4 sm:px-8 pt-12">
+          {/* Projects Grid Cards - Phone pe 2-2 aur Desktop pe 4-4 */}
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-6">
+            {filteredProjects.map((project) => (
+              <div 
+                key={project.id}
+                className="bg-[#131517] border border-zinc-800/80 rounded-2xl overflow-hidden shadow-2xl hover:border-zinc-700 transition-all flex flex-col justify-between group"
+              >
+                <div>
+                  {/* Thumbnail Image Container */}
+                  <div className="relative h-32 sm:h-48 overflow-hidden bg-black/40 p-2 sm:p-3 border-b border-zinc-800 flex items-center justify-center">
+                    <img 
+                      src={project.image} 
+                      alt={project.title} 
+                      className="w-full h-full object-contain rounded-lg group-hover:scale-105 transition-transform duration-500"
+                    />
+                    <span className="absolute top-2 right-2 sm:top-4 sm:right-4 bg-black/80 backdrop-blur-md text-[8px] sm:text-[10px] font-bold px-2 sm:px-3 py-0.5 sm:py-1 rounded-full uppercase tracking-wider text-red-500 border border-zinc-700/80 shadow-md">
+                      {project.status}
+                    </span>
+                  </div>
+
+                  {/* Details Content */}
+                  <div className="p-3 sm:p-6">
+                    <h3 className="text-xs sm:text-xl font-bold text-white mb-1 sm:mb-2 group-hover:text-red-500 transition-colors line-clamp-1">{project.title}</h3>
+                    <p className="text-zinc-400 text-[10px] sm:text-sm leading-relaxed mb-3 sm:mb-4 line-clamp-2 sm:line-clamp-none">{project.description}</p>
+                    
+                    {/* Tech / Service Tags */}
+                    <div className="flex flex-wrap gap-1 sm:gap-1.5 mb-2">
+                      {project.tech.map((t, index) => (
+                        <span key={index} className="bg-[#0c0d0e] text-zinc-300 border border-zinc-800 text-[8px] sm:text-[10px] font-semibold px-2 sm:px-3 py-0.5 sm:py-1 rounded-lg">
+                          {t}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
                 </div>
 
-                {/* Details Content */}
-                <div className="p-3 sm:p-6">
-                  <h3 className="text-xs sm:text-xl font-bold text-white mb-1 sm:mb-2 group-hover:text-red-500 transition-colors line-clamp-1">{project.title}</h3>
-                  <p className="text-zinc-400 text-[10px] sm:text-sm leading-relaxed mb-3 sm:mb-4 line-clamp-2 sm:line-clamp-none">{project.description}</p>
-                  
-                  {/* Tech / Service Tags */}
-                  <div className="flex flex-wrap gap-1 sm:gap-1.5 mb-2">
-                    {project.tech.map((t, index) => (
-                      <span key={index} className="bg-[#0c0d0e] text-zinc-300 border border-zinc-800 text-[8px] sm:text-[10px] font-semibold px-2 sm:px-3 py-0.5 sm:py-1 rounded-lg">
-                        {t}
+                {/* Action Button */}
+                <div className="px-3 pb-3 sm:px-6 sm:pb-6 pt-0">
+                  <a 
+                    href={project.liveUrl} 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="block text-center w-full bg-zinc-900 hover:bg-red-600 text-zinc-300 hover:text-white font-bold py-2 sm:py-3 rounded-xl text-[10px] sm:text-xs transition-colors border border-zinc-800 hover:border-red-600 cursor-pointer shadow-md"
+                  >
+                    {project.category === 'web' ? 'Visit Live →' : 'View Details →'}
+                  </a>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* ========================================== */}
+        {/* 🎬 DEDICATED CLIENT AD VIDEOS SECTION     */}
+        {/* ========================================== */}
+        <div className="max-w-7xl mx-auto px-4 sm:px-8 mt-24">
+          
+          {/* Section Header */}
+          <div className="text-center max-w-2xl mx-auto mb-12">
+            <span className="text-red-500 font-bold uppercase tracking-widest text-xs bg-red-950/40 border border-red-900/50 px-4 py-1.5 rounded-full">
+              VIDEO CREATIVES & AD CAMPAIGNS
+            </span>
+            <h2 className="text-3xl sm:text-4xl font-black text-white tracking-tight mt-3">
+              Client Ad <span className="text-red-600">Showcase</span>
+            </h2>
+            <p className="text-zinc-400 text-xs sm:text-sm mt-2">
+              Watch promotional reels, social media ad creatives, and performance marketing videos crafted for our clients.
+            </p>
+          </div>
+
+          {/* Videos Grid */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {clientAdVideos.map((video) => (
+              <div 
+                key={video.id}
+                className="bg-[#131517] border border-zinc-800/80 rounded-2xl overflow-hidden shadow-2xl p-4 flex flex-col justify-between group hover:border-red-600/50 transition-all"
+              >
+                <div>
+                  {/* YouTube Short / Video Iframe container (Perfect vertical aspect ratio for Shorts) */}
+                  <div className="relative w-full h-[420px] rounded-xl overflow-hidden bg-black border border-zinc-800 shadow-inner">
+                    <iframe 
+                      src={video.embedUrl} 
+                      title={video.title}
+                      className="w-full h-full border-0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                      allowFullScreen
+                    ></iframe>
+                  </div>
+
+                  {/* Video Info */}
+                  <div className="mt-4">
+                    <div className="flex items-center justify-between mb-1">
+                      <span className="text-red-500 font-bold text-[10px] uppercase tracking-wider bg-red-950/30 px-2.5 py-0.5 rounded-md border border-red-900/40">
+                        {video.tag}
                       </span>
-                    ))}
+                      <span className="text-zinc-500 text-xs font-medium">YouTube</span>
+                    </div>
+                    <h3 className="text-white font-bold text-base mt-2 group-hover:text-red-500 transition-colors">
+                      {video.title}
+                    </h3>
+                    <p className="text-zinc-400 text-xs mt-1">
+                      {video.client}
+                    </p>
                   </div>
                 </div>
               </div>
+            ))}
+          </div>
 
-              {/* Action Button */}
-              <div className="px-3 pb-3 sm:px-6 sm:pb-6 pt-0">
-                <a 
-                  href={project.liveUrl} 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="block text-center w-full bg-zinc-900 hover:bg-red-600 text-zinc-300 hover:text-white font-bold py-2 sm:py-3 rounded-xl text-[10px] sm:text-xs transition-colors border border-zinc-800 hover:border-red-600 cursor-pointer shadow-md"
-                >
-                  {project.category === 'web' ? 'Visit Live →' : 'View Details →'}
-                </a>
-              </div>
-            </div>
-          ))}
         </div>
 
       </main>
