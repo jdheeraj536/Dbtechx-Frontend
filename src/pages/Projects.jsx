@@ -22,6 +22,7 @@ import Manjushree from '../assets/Manjushree.png';
 
 export default function Projects() {
   const [activeTab, setActiveTab] = useState('all');
+  
 
   // ==========================================
   // 📂 ALL CLIENTS DATA (Web Development & Digital Marketing)
