@@ -17,6 +17,7 @@ import Career from '../assets/career.jpg';
 import Smh from '../assets/smh.webp';
 import Luxera from '../assets/luxera.jpeg';
 import Shivam from '../assets/shivam.jpeg';
+import Kanchanjunga2 from '../assets/kanchanjunga2.png';
 
 export default function Projects() {
   const [activeTab, setActiveTab] = useState('all');
@@ -50,10 +51,10 @@ export default function Projects() {
       title: "Kanchanjunga Foundation",
       category: "web",
       description: "Clean, professional static NGO website designed for social impact showcasing foundation initiatives and mission.",
-      image: Kanchajunga,
+      image: Kanchanjunga2,
       tech: ["Static Website", "React/JS", "UI Design", "Tailwind CSS"],
       liveUrl: "http://kanchanjungafoundation.com",
-      status: "Upcoming / Pre-launch"
+      status: "Live Preview"
     },
     {
       id: 4,
