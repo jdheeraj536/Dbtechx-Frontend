@@ -17,7 +17,7 @@ import Career from '../assets/career.jpg';
 import Smh from '../assets/smh.webp';
 import Luxera from '../assets/luxera.jpeg';
 import Shivam from '../assets/shivam.jpeg';
-import kanchanjungawebsite from '../assets/kanchanjungawebsite.png';
+import Kanchanjungawebsite from '../assets/kanchanjungawebsite.png';
 import Manjushree from '../assets/Manjushree.png';
 
 export default function Projects() {
@@ -50,10 +50,10 @@ export default function Projects() {
 
     {
       id: 3,
-      title: "Kanchanjunga Foundation ",
+      title: "Kanchanjunga Website ",
       category: "web", 
       description: "High-end dynamic portfolio website showcasing architectural designs, project galleries, and client consultation features.",
-      image: kanchanjungawebsite,
+      image: Kanchanjungawebsite,
       tech: ["Dynamic Web", "React/JS", "UI Design", "Tailwind CSS"],
       liveUrl: "https://kanchanjungafoundation.com/",
       status: "Live Preview"
@@ -141,7 +141,7 @@ export default function Projects() {
     },
     {
       id: 12,
-      title: "Kanchanjunga Foundation",
+      title: "Kanchanjunga Foundation For Higher Education",
       category: "marketing",
       description: "Foundation promotional campaigns, social welfare outreach, and digital presence scaling.",
       image: Kanchajunga,
