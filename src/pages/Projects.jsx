@@ -18,7 +18,7 @@ import Smh from '../assets/smh.webp';
 import Luxera from '../assets/luxera.jpeg';
 import Shivam from '../assets/shivam.jpeg';
 import Kanchanjungawebsite from '../assets/kanchanjungawebsite.webp';
-import Manjushree from '../assets/Manjushree.png';
+import Manjushree from '../assets/Manjushree.webp';
 
 export default function Projects() {
   const [activeTab, setActiveTab] = useState('all');
