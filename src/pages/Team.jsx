@@ -4,6 +4,7 @@ import Simran from "../assets/simran.webp";
 import Deepika from "../assets/deepika.webp";
 import Rahul from "../assets/rahul.webp";
 import Monika from "../assets/monika.webp";
+import Shalu from "../assets/shalu.png";
 import Navbar from "../assets/components/Navbar"; // Path check kar lena
 import Footer from "../assets/components/Footer";
 import {
@@ -26,6 +27,18 @@ function Team() {
         linkedin: "#",
       },
     },
+    {
+      name: "Shalini Jha",
+      role: "Co-Founder",
+      image: Shalu,
+      desc: "Shalini Jha, Co-Founder at Dbtechx, drives innovation, strategy, and business growth with a focus on delivering impactful digital solutions.",
+      socials: {
+        facebook: "https://www.facebook.com/jdheeraj536",
+        instagram: "https://www.instagram.com/dheeraj_jha_vlogs", // Individual custom link
+        linkedin: "#",
+      },
+    },
+
     {
       name: "Rahul Kumar",
       role: "Social Media Manager",
