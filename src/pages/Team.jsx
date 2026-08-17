@@ -5,6 +5,8 @@ import Deepika from "../assets/deepika.webp";
 import Rahul from "../assets/rahul.webp";
 import Monika from "../assets/monika.webp";
 import Shalu from "../assets/shalu.png";
+import Amrit from "../assets/amrit.webp";
+import Ankit from "../assets/ankit.webp";
 import Navbar from "../assets/components/Navbar"; // Path check kar lena
 import Footer from "../assets/components/Footer";
 import {
@@ -50,6 +52,29 @@ function Team() {
         linkedin: "#",
       },
     },
+    {
+      name: "Amrit Anand Yadav",
+      role: "Senior Web Developer (SDE)",
+      image: Amrit,
+      desc: "Amrit Anand Yadav — Senior Web Developer at Dbtechx, responsible for developing, managing, and optimizing modern, high-performance websites and web solutions.",
+      socials: {
+        facebook: "#",
+        instagram: "#", // Individual custom link
+        linkedin: "#",
+      },
+    },
+    {
+      name: "Ankit Kumar Jha",
+      role: "Marketing & Sales Manager",
+      image: Ankit,
+      desc: "Ankit Kumar Jha handles Marketing & Sales at DBTECHX, focusing on lead generation, client communication, sales growth, and building strong customer relationships to drive business success.",
+      socials: {
+        facebook: "#",
+        instagram: "#", // Individual custom link
+        linkedin: "#",
+      },
+    },
+
     {
       name: "Monika Kumari",
       role: "Social Media Manager",
