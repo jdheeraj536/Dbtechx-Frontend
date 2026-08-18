@@ -5,7 +5,7 @@ import Deepika from "../assets/deepika.webp";
 import Rahul from "../assets/rahul.webp";
 import Monika from "../assets/monika.webp";
 import Shalu from "../assets/shalu.png";
-import Amrit from "../assets/amrit.webp";
+import Amrit from "../assets/amrit.jpeg";
 import Ankit from "../assets/ankit.webp";
 import Navbar from "../assets/components/Navbar"; // Path check kar lena
 import Footer from "../assets/components/Footer";
@@ -53,10 +53,10 @@ function Team() {
       },
     },
     {
-      name: "Amrit Anand Yadav",
+      name: "Amrit Anand",
       role: "Senior Web Developer (SDE)",
       image: Amrit,
-      desc: "Amrit Anand Yadav — Senior Web Developer at Dbtechx, responsible for developing, managing, and optimizing modern, high-performance websites and web solutions.",
+      desc: "Amrit Anand — Senior Web Developer at Dbtechx, responsible for developing, managing, and optimizing modern, high-performance websites and web solutions.",
       socials: {
         facebook: "#",
         instagram: "#", // Individual custom link
