@@ -12,6 +12,9 @@ import Contact from "./pages/Contact";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TermsConditions from "./pages/TermsConditions";
 import Support from "./pages/Support";
+import Gallery from "./pages/Gallery";
+import BlogList from "./pages/BlogList";
+import BlogPost from "./pages/BlogPost";
 import NotFound from "./pages/NotFound";
 
 // Auto-scroll logic
@@ -34,6 +37,9 @@ function App() {
         <Route path="/team" element={<Team />} />
         <Route path="/careers" element={<Careers />} />
         <Route path="/projects" element={<Projects />} />
+        <Route path="/gallery" element={<Gallery />} />
+        <Route path="/blogs" element={<BlogList />} />
+        <Route path="/blogs/:slug" element={<BlogPost />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         <Route path="/terms" element={<TermsConditions />} />

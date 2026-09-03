@@ -3,6 +3,8 @@ import Navbar from '../assets/components/Navbar';
 import Footer from '../assets/components/Footer';
 
 // Imports for available assets
+import Avanatara from '../assets/avantara.png';
+import Tanweer from '../assets/tanweer.png';
 import Smhhospital from '../assets/smhhospital.png';
 import Shivamsuri from '../assets/shivamsuri.png';
 import Bharat from '../assets/bharat.jpg';
@@ -30,6 +32,16 @@ export default function Projects() {
   const clientProjects = [
     {
       id: 1,
+      title: "Avantara Global Pvt Ltd",
+      category: "web", 
+      description: "Avantara Global Pvt. Ltd. is a leading Indian direct-selling and MLM company focused on empowering individuals through business opportunities, quality products, and a strong entrepreneurial network.",
+      image: Avanatara,
+      tech: ["Dynamic Web", "Next/JS", "Corporate UI", "E-Commerce", "MLM"],
+      liveUrl: "https://www.avantaraglobal.com/",
+      status: "Live Website"
+    },
+    {
+      id: 2,
       title: "SMH Hospital Purnea",
       category: "web", 
       description: "Advanced dynamic healthcare portal with responsive UI, doctor consultation layout, and seamless user navigation.",
@@ -39,7 +51,7 @@ export default function Projects() {
       status: "Live Website"
     },
     {
-      id: 2,
+      id: 3,
       title: "Shivam Suri Architect",
       category: "web", 
       description: "High-end dynamic portfolio website showcasing architectural designs, project galleries, and client consultation features.",
@@ -50,7 +62,7 @@ export default function Projects() {
     },
 
     {
-      id: 3,
+      id: 4,
       title: "Kanchanjunga Website ",
       category: "web", 
       description: "High-end dynamic portfolio website showcasing architectural designs, project galleries, and client consultation features.",
@@ -59,9 +71,19 @@ export default function Projects() {
       liveUrl: "https://kanchanjungafoundation.com/",
       status: "Live Preview"
     },
+    {
+      id: 5,
+      title: "Dr. Tanweer Razzaque ",
+      category: "web", 
+      description: "Dr. Tanweer Razzaque is a dedicated and experienced healthcare professional committed to providing quality patient care with expertise, compassion, and professionalism.",
+      image: Tanweer,
+      tech: ["Dynamic Web", "React/JS", "UI Design", "Tailwind CSS"],
+      liveUrl: "https://drtanweerrazzaque.com/",
+      status: "Live Preview"
+    },
     
     {
-      id: 4,
+      id: 6,
       title: "Mannat Automation",
       category: "marketing",
       description: "Strategic digital marketing campaigns, lead generation funnels, and social media brand positioning.",
@@ -71,7 +93,7 @@ export default function Projects() {
       status: "Active Campaign"
     },
     {
-      id: 5,
+      id: 7,
       title: "Grow Elevator",
       category: "marketing",
       description: "Targeted digital promotions, local business optimization, and high-converting ad copies.",
@@ -81,7 +103,7 @@ export default function Projects() {
       status: "Active Campaign"
     },
     {
-      id: 6,
+      id: 8,
       title: "Bharat Enterprises",
       category: "marketing",
       description: "Comprehensive marketing solutions, promotional creatives, and audience engagement scaling.",
@@ -91,7 +113,7 @@ export default function Projects() {
       status: "Client Partner"
     },
     {
-      id: 7,
+      id: 9,
       title: "Cat Walk Salon",
       category: "marketing",
       description: "Social media management, aesthetic post designing, and local customer reach campaigns.",
@@ -101,7 +123,7 @@ export default function Projects() {
       status: "Active Campaign"
     },
     {
-      id: 8,
+      id: 10,
       title: "Aeham Hospital",
       category: "marketing",
       description: "Healthcare digital marketing, patient outreach campaigns, and professional branding.",
@@ -111,7 +133,7 @@ export default function Projects() {
       status: "Client Partner"
     },
     {
-      id: 9,
+      id: 11,
       title: "Advanced Homeo Care",
       category: "marketing",
       description: "Clinic growth strategies, targeted digital advertisements, and informational outreach.",
@@ -121,7 +143,7 @@ export default function Projects() {
       status: "Client Partner"
     },
     {
-      id: 10,
+      id: 12,
       title: "Furniture Home",
       category: "marketing",
       description: "E-commerce promotion, product showcase ads, and high-engagement social media campaigns.",
@@ -131,7 +153,7 @@ export default function Projects() {
       status: "Active Campaign"
     },
     {
-      id: 11,
+      id: 13,
       title: "Career Craft",
       category: "marketing",
       description: "Educational consultancy marketing, student lead generation, and career event promotions.",
@@ -141,7 +163,7 @@ export default function Projects() {
       status: "Active Campaign"
     },
     {
-      id: 12,
+      id: 14,
       title: "Kanchanjunga Foundation For Higher Education",
       category: "marketing",
       description: "Foundation promotional campaigns, social welfare outreach, and digital presence scaling.",
@@ -151,7 +173,7 @@ export default function Projects() {
       status: "Active Campaign"
     },
     {
-      id: 13,
+      id: 15,
       title: "SMH Hospital (Hope Hospital)",
       category: "marketing",
       description: "24*7 Emergency Hospital Also Known As Hope Hospital Purnea",
@@ -161,7 +183,7 @@ export default function Projects() {
       status: "Active Campaign"
     },
     {
-      id: 14,
+      id: 16,
       title: "Luxera Tiles",
       category: "marketing",
       description: "All Types Of Tiles & Sanitaryware",
@@ -171,7 +193,7 @@ export default function Projects() {
       status: "Active Campaign"
     },
     {
-      id: 15,
+      id: 17,
       title: "Shivam Suri Architect",
       category: "marketing",
       description: "Shivam Suri Architect is a premier architectural consultancy practice based in Purnea",
@@ -181,7 +203,7 @@ export default function Projects() {
       status: "Active Campaign"
     },
     {
-      id: 16,
+      id: 18,
       title: "Universal Hospital And Research Centre",
       category: "marketing",
       description: "Universal Hospital & Research Centre, Purnia ek healthcare aur nursing training institute.",
