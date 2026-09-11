@@ -4,7 +4,7 @@ import Simran from "../assets/simran.webp";
 import Deepika from "../assets/deepika.webp";
 import Rahul from "../assets/rahul.webp";
 import Monika from "../assets/monika.webp";
-import Shalu from "../assets/shalu.png";
+import Ravi from "../assets/ravi.png";
 import Amrit from "../assets/amrit.jpeg";
 import Ankit from "../assets/ankit.webp";
 import Navbar from "../assets/components/Navbar"; // Path check kar lena
@@ -29,17 +29,6 @@ function Team() {
         linkedin: "#",
       },
     },
-    {
-      name: "Shalini Jha",
-      role: "Co-Founder",
-      image: Shalu,
-      desc: "Shalini Jha, Co-Founder at Dbtechx, drives innovation, strategy, and business growth with a focus on delivering impactful digital solutions.",
-      socials: {
-        facebook: "https://www.facebook.com/jdheeraj536",
-        instagram: "https://www.instagram.com/dheeraj_jha_vlogs", // Individual custom link
-        linkedin: "#",
-      },
-    },
 
     {
       name: "Rahul Kumar",
@@ -52,6 +41,18 @@ function Team() {
         linkedin: "#",
       },
     },
+{
+      name: "Ravi Kumar",
+      role: "Social Media Manager",
+      image: Ravi,
+      desc: "Social Media Manager at Dbtechx, focused on creating engaging content, managing social media platforms, and helping businesses grow their digital presence.",
+      socials: {
+        facebook: "#",
+        instagram: "#", // Individual custom link
+        linkedin: "#",
+      },
+    },
+
     {
       name: "Amrit Anand",
       role: "Senior Web Developer (SDE)",
