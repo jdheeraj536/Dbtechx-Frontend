@@ -6,7 +6,6 @@ import Rahul from "../assets/rahul.webp";
 import Monika from "../assets/monika.webp";
 import Ravi from "../assets/ravi.png";
 import Amrit from "../assets/amrit.jpeg";
-import Ankit from "../assets/ankit.webp";
 import Navbar from "../assets/components/Navbar"; // Path check kar lena
 import Footer from "../assets/components/Footer";
 import {
@@ -64,17 +63,7 @@ function Team() {
         linkedin: "#",
       },
     },
-    {
-      name: "Ankit Kumar Jha",
-      role: "Marketing & Sales Manager",
-      image: Ankit,
-      desc: "Ankit Kumar Jha handles Marketing & Sales at DBTECHX, focusing on lead generation, client communication, sales growth, and building strong customer relationships to drive business success.",
-      socials: {
-        facebook: "#",
-        instagram: "#", // Individual custom link
-        linkedin: "#",
-      },
-    },
+    
 
     {
       name: "Monika Kumari",
