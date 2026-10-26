@@ -6,6 +6,7 @@ import Rahul from "../assets/rahul.webp";
 import Monika from "../assets/monika.webp";
 import Ravi from "../assets/ravi.png";
 import Amrit from "../assets/amrit.jpeg";
+import Anshu from "../assets/anshu.jpeg";
 import Navbar from "../assets/components/Navbar"; // Path check kar lena
 import Footer from "../assets/components/Footer";
 import {
@@ -25,6 +26,18 @@ function Team() {
       socials: {
         facebook: "https://www.facebook.com/jdheeraj536",
         instagram: "https://www.instagram.com/dheeraj_jha_vlogs", // Individual custom link
+        linkedin: "#",
+      },
+    },
+
+    {
+      name: "Anshu Jha",
+      role: "Team Leader",
+      image: Anshu,
+      desc: "Leading the team with dedication, teamwork, and a vision for success at Dbtechx.",
+      socials: {
+        facebook: "https://www.facebook.com/rahul.roy.449286",
+        instagram: "#", // Individual custom link
         linkedin: "#",
       },
     },
