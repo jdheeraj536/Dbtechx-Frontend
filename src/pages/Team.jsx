@@ -35,7 +35,7 @@ const teamMembers = [
     image: Anshu,
     department: "Leadership",
     desc: "Leading the team with dedication, teamwork, and a vision for success at Dbtechx.",
-    socials: { facebook: "https://www.facebook.com/rahul.roy.449286", instagram: "#", linkedin: "#" },
+    socials: { facebook: "https://www.facebook.com/share/1DFu7komni/ ", instagram: "https://www.instagram.com/jha__ansh?exln=MTk2cHc4ZTBxZmgxOQ==", linkedin: "https://www.linkedin.com/in/anshu-kumar-34a66119a?utm_source=share_via&utm_content=profile&utm_medium=member_android" },
   },
   {
     name: "Rahul Kumar",
